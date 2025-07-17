@@ -1,0 +1,1 @@
+{:hooks {:analyze-call {html.yeah/defelem clj-kondo.yeah/element}}}

@@ -1,0 +1,14 @@
+{:paths ["src" "resources"]
+ :deps {dev.onionpancakes/chassis {:mvn/version "1.0.365"}}
+ :aliases
+ {:dev {:extra-paths ["dev/src" "dev/resources" "test"]
+        :extra-deps  {clj-kondo/clj-kondo          {:mvn/version "2025.06.05"}
+                      com.cnuernber/charred        {:mvn/version "1.037"}
+                      io.github.squint-cljs/squint {:git/tag "v0.8.150" :git/sha "840e5bd"}
+                      io.github.tonsky/clj-reload  {:mvn/version "0.9.7"}
+                      metosin/malli                {:mvn/version "0.19.1"}}}
+  :test {:extra-paths ["test"]
+         :extra-deps {io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
+         :main-opts ["-m" "cognitect.test-runner"]
+         :exec-fn cognitect.test-runner.api/test}}}
