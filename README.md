@@ -42,6 +42,10 @@ schema. Schema syntax follows [malli vector syntax](https://github.com/metosin/m
 
 See [dev.clj](dev/src/dev.clj) or [yeah_test.clj](test/html/yeah_test.clj) for more examples.
 
+
+[![Clojars Project](https://img.shields.io/clojars/v/com.github.brianium/html.yeah.svg)](https://clojars.org/com.github.brianium/html.yeah)
+
+
 ## Table of Contents
 
 - [Why?](#why)
