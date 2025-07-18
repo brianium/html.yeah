@@ -11,4 +11,13 @@
          :extra-deps {io.github.cognitect-labs/test-runner
                       {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
          :main-opts ["-m" "cognitect.test-runner"]
-         :exec-fn cognitect.test-runner.api/test}}}
+         :exec-fn cognitect.test-runner.api/test}
+  :slim {:deps
+         {io.github.abogoyavlensky/slim {:mvn/version "LATEST"}
+          slipset/deps-deploy {:mvn/version "0.2.2"}}
+         :ns-default slim.lib
+         :exec-args {:lib         com.github.brianium/html.yeah
+                     :version     "0.1.0"
+                     :url         "https://github.com/brianium/html.yeah"
+                     :description "HTML so good, it will have you saying \"Html Yeah Brother\""
+                     :developer   "Brian Scaturro"}}}}
