@@ -85,9 +85,7 @@
       (throw (ex-info "html.yeah/property must return a vector" {:id id :schema schema :result result})))))
 
 (defn- create-schema
-  "Creates a new schema free of binding forms. Handles
-  merging schemas (left-to-right) based on the presence of
-  an ::attrs/merge key in opts"
+  "Creates a new schema free of binding forms."
   [root attribute-bindings opts fields]
   (let [new-schema (into [root (->> (keys attribute-bindings)
                                     (apply dissoc opts))] fields)]
